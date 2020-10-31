@@ -29,6 +29,35 @@ ul.a {
     </head>
     
     <body>
+        
+        <!-- facebook chatbot start-->
+        <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="100581055196111">
+      </div>
+        <!-- facebook chatbot end-->
+        
+        
+        
     
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -175,26 +204,21 @@ ul.a {
                         <p> My Finance Counselor provides efficiently manage your day to day records, analysis of your transactions, the recommendation to manage the profitability and tax, balance sheet, and tax filing. Here are a few prime services that we deliver with excellence</p>
                         </div>
                         <div style="width: 250px; float:left; height:200px;  margin:10px">
-  <ul class="a">
-  <li>1. Book Keeping</li>
-  <li>2. ITR Filing</li>
-  <li>3. Balance Sheet Finalization</li>
-  <li>4. GST Return Filing</li>
-</ul>
-</div>
-<div style="width: 250px; float:left; height:200px;  margin:10px">
-  <ul class="a">
-  <li>1. Fund Raising</li>
-  <li>2. Hire Sales Expert</li>
-  <li>3. Crowd Funding</li>
-  <li>4. Outsource to India</li>
-</ul>
-</div>
-                    
-
-                            
-                        
-                    
+                          <ul class="a">
+                          <li>1. Book Keeping</li>
+                          <li>2. ITR Filing</li>
+                          <li>3. Balance Sheet Finalization</li>
+                          <li>4. GST Return Filing</li>
+                        </ul>
+                        </div>
+                        <div style="width: 250px; float:left; height:200px;  margin:10px">
+                          <ul class="a">
+                          <li>1. Fund Raising</li>
+                          <li>2. Hire Sales Expert</li>
+                          <li>3. Crowd Funding</li>
+                          <li>4. Outsource to India</li>
+                        </ul>
+                        </div>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
@@ -221,42 +245,42 @@ ul.a {
                 <!-- ***** Mini Box Start ***** -->
                 <div class="row">
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Hire an Accountant</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Book Keeping Management</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Hire Data Entry Expert</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Income Tax Return Filing</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>GST Return Filing</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Balance Sheet Finalization</strong>
                             <span></span>
@@ -280,42 +304,42 @@ ul.a {
                 <!-- ***** Mini Box Start ***** -->
                 <div class="row">
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Outsource to India</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Content Writing</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Funding Raising</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Crowd Funding</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Hire Sales Expert</strong>
                             <span></span>
                         </a>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
+                        <a href="#" class="mini-box hire_modal" data-toggle="modal" data-target="#hireAccountantModal">
                             <i><img src="assets/images/work-process-item-01.png" alt=""></i>
                             <strong>Hire a Consultant</strong>
                             <span></span>
@@ -406,11 +430,12 @@ ul.a {
                 <!-- ***** Contact Form Start ***** -->
                 <div class="col-lg-8 col-md-6 col-sm-12">
                     <div class="contact-form">
-                        <form id="contact" action="" method="get">
+                        <form id="contact" action="send_query.php" method="post">
                           <div class="row">
                             <div class="col-lg-6 col-md-12 col-sm-12">
                               <fieldset>
                                 <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                                 <input type="hidden" name="subject" value="Query From Website">
                               </fieldset>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12">
@@ -437,14 +462,13 @@ ul.a {
         </div>
     </section>
     <!-- ***** Contact Us End ***** -->
-    
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <ul class="social">
-                        <li><a href="https://www.facebook.com/myfinance.counselor.9"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/myfinancecounselor/"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/MyFinanceCouns1"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/my-finance-counselor-1108451ba/"><i class="fa fa-linkedin"></i></a></li>
                         <li><a href="#"><i class="fa fa-rss"></i></a></li>
@@ -459,7 +483,53 @@ ul.a {
             </div>
         </div>
     </footer>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="hireAccountantModal" tabindex="-1" role="dialog" aria-labelledby="hireAccountantModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLongTitle"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="send_query.php" method="post">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                                <input type="hidden" name="subject" id="subject">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal End -->
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
@@ -475,6 +545,11 @@ ul.a {
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-
+    <script type="text/javascript">
+        $(document).on("click",".hire_modal",function() {
+            $("#modalLongTitle").html($(this).children('strong').text());
+            $("#subject").val($(this).children('strong').text());
+        })
+    </script>
   </body>
 </html>
